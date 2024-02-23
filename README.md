@@ -1,6 +1,10 @@
 # PhD thesis template for Astrophysics, University of Edinburgh
 
-Do not clone or fork this repo, download it instead. It will give you the option to set it up as your own git repo later.
+## How to use this template
+1. Download this repository (do not clone or fork as it would prevent you from setting it up as your own git repo later)
+2. Create new project in Overleaf and upload the folder (may need to be zipped first)
+3. Add figures to the `graphics` folders and all references to `master.bib`
+4. Optional: read the section below for some neat tips.
 
 ## Faster compiling and better plot management
 **The following is optional but may be useful to those with many plots in their thesis.**
@@ -74,6 +78,6 @@ In this example, `path/to/project/thesis_template` is the path you would use for
 Note that this template does not include `draft_graphics` folders by default,
 however, `safefigs` will generate these automatically as needed.
 
-### Updating the graphics path - optional
+### Updating the graphics path (even more optional)
 If you decide to organise your plots into subdirectories inside `draft_graphics/graphics`, you will need to add these directories to the graphics path.
 Run `scripts/generate_graphics_path.py` from the `thesis_template folder`, (eg `python scripts/generate_graphics_path.py`) to generate a new latex graphics path and copy & paste it over the previous one in `customisations.sty`.
