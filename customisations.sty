@@ -11,13 +11,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%% GRAPHICS PATH %%%%%%%%%%%%%%%%%%%%%%
-% Use this to include graphics simply by naming the file rather than the full path.
-% E.g.
-% \includegraphics{my_plot}
-% instead of
-% \includegraphics{chap1/graphics/my_plot}
-% This is optional, but uncomment the block below if you wish to enable it.
+%% Ignore unless using 'faster compiling' method from the README.md
 
+%% Uncomment block below to compile with pdfs
 % \graphicspath{
 % {chap4/graphics}
 % {chap3/graphics}
@@ -25,6 +21,24 @@
 % {chap5_conclusion/graphics}
 % {chap1_intro/graphics}
 % }
+
+%% Uncomment block below to compile with pngs
+% \graphicspath{
+% {chap4/draft_graphics}
+% {chap3/draft_graphics}
+% {chap2/draft_graphics}
+% {chap5_conclusion/draft_graphics}
+% {chap1_intro/draft_graphics}
+% }
+
+%% NOTE if using this method:
+% When inserting a figure, simply by name the file rather than the full path.
+% (Overleaf might want to autofill, don't let it!)
+%
+% E.g.
+% \includegraphics{my_plot}
+% instead of
+% \includegraphics{chap1/graphics/my_plot}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% END OF CUSTOMISATONS %%%%%%%%%%%%%%%%%

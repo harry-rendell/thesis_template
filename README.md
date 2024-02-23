@@ -11,11 +11,6 @@ which goes alongside the graphics folder.
 * For this, it is advised to have a custom figure saving script which outputs the png and pdf plots. I have provided one in this repo: `scripts/save_figure.py`
 * Put this script alongside your code and import it via: 'from save_figure import savefigs'
 
-If you use this method, use `scripts/generate_graphics_path.py` to create 
-a latex graphics path and copy & paste it over the graphics path above.
-Make sure it is run from the `thesis_template folder`, eg `python scripts/generate_graphics_path.py`
-Have one of the draft_graphics or graphics paths uncommented to decide whether pdfs or pngs are used when compiling.
-
 This method is most efficient if you combine it with git for overleaf. This is a premium feature, but Overleaf Premium is free as an Edinburgh student!
 * Overleaf Premium: https://www.overleaf.com/edu/edinburgh
 * Overleaf Git integration: https://www.overleaf.com/learn/how-to/Git_integration
@@ -79,4 +74,6 @@ In this example, `path/to/project/thesis_template` is the path you would use for
 Note that this template does not include `draft_graphics` folders by default,
 however, `safefigs` will generate these automatically as needed.
 
-Feel free to adapt this for your own use case!
+### Updating the graphics path - optional
+If you decide to organise your plots into subdirectories inside `draft_graphics/graphics`, you will need to add these directories to the graphics path.
+Run `scripts/generate_graphics_path.py` from the `thesis_template folder`, (eg `python scripts/generate_graphics_path.py`) to generate a new latex graphics path and copy & paste it over the previous one in `customisations.sty`.
