@@ -1,33 +1,33 @@
-# Thesis template for Astrophysics, University of Edinburgh
+# PhD thesis template for Astrophysics, University of Edinburgh
 
 Do not clone or fork this repo, download it instead. It will give you the option to set it up as your own git repo later.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% FASTER COMPILING AND BETTER PLOT UPLOADING %%%%%%
-A thesis with many pdfs can become very unweidly and slow to compile.
-A solution to this is to have png copies of all pdfs and place them in a draft_graphics
-which goes alongside the graphics folder. For this, it is advised to have a custom figure saving
-script which outputs the png and pdf plots. I have provided one in scripts/save_figure.py
-Put this script alongside your code and import it via: 'from save_figure import savefigs'
+## Faster compiling and better plot management
+**The following is optional but may be useful to those with many plots in their thesis.**
 
-If you use this method, use scripts/generate_graphics_path.py to create 
+* An overleaf project with many pdfs can become very unweidly and slow to compile.
+* A solution to this is to have png copies of all pdfs and place them in a draft_graphics
+which goes alongside the graphics folder. 
+* For this, it is advised to have a custom figure saving script which outputs the png and pdf plots. I have provided one in this repo: `scripts/save_figure.py`
+* Put this script alongside your code and import it via: 'from save_figure import savefigs'
+
+If you use this method, use `scripts/generate_graphics_path.py` to create 
 a latex graphics path and copy & paste it over the graphics path above.
-Make sure it is run from the thesis_template folder, eg python scripts/generate_graphics_path.py
-Have one of the draft_graphics or graphics paths uncommented to decide which figures are used.
+Make sure it is run from the `thesis_template folder`, eg `python scripts/generate_graphics_path.py`
+Have one of the draft_graphics or graphics paths uncommented to decide whether pdfs or pngs are used when compiling.
 
-This method is most efficient if you combine it with git for overleaf,
-see: https://www.overleaf.com/learn/how-to/Git_integration
+This method is most efficient if you combine it with git for overleaf. This is a premium feature, but Overleaf Premium is free as an Edinburgh student!
+* Overleaf Premium: https://www.overleaf.com/edu/edinburgh
+* Overleaf Git integration: https://www.overleaf.com/learn/how-to/Git_integration
 
-This is a premium feature, but Overleaf Premium is free as an Edinburgh student!
-see: https://www.overleaf.com/edu/edinburgh
-
-By making your overleaf a git repo, you can have it as a folder alongside your code 
+\
+By making your Overleaf project a Git repository, you can have it as a folder alongside your code 
 which enables you to output plots DIRECTLY to the overleaf git folder, which can be 
-commited and pushed directly to overleaf, even if you are creating plots on a cluster such as cuillin!
+commited and pushed directly to Overleaf, even if you are creating plots on a cluster such as cuillin!
 No more dragging and dropping plots into overleaf...
 
 Here is an example of my folder structure:
-
+```
 path/to/project
 │
 ├── mycode
@@ -68,15 +68,15 @@ path/to/project
         ├── acknowledgements.tex
         ├── crest.pdf
         └── lay_summary.tex
+```
 
-
-some_analysis_code.py is whatever code I would use to generate plots,
-and save_figure.py is the custom plotting function found in the scripts folder
+`some_analysis_code.py` is whatever code I would use to generate plots,
+and save_figure.py is the custom plotting function found in the `scripts` folder
 (I recommended you move it to your code folder for easier importing).
-In this example, 'path/to/project/thesis_template' is the path you would use for the 
-thesis_dir argument in the savefigs function.
+In this example, `path/to/project/thesis_template` is the path you would use for the 
+`thesis_dir` argument in the `savefigs` function.
 
-Note that this template does not include draft_graphics folders by default,
-however, safefigs will generate these automatically as needed.
+Note that this template does not include `draft_graphics` folders by default,
+however, `safefigs` will generate these automatically as needed.
 
 Feel free to adapt this for your own use case!
