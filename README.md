@@ -66,7 +66,7 @@ path/to/project
 ```
 
 `some_analysis_code.py` is whatever code I would use to generate plots,
-and save_figure.py is the custom plotting function found in the `scripts` folder
+and `save_figure.py` is the custom plotting function found in the `scripts` folder
 (I recommended you move it to your code folder for easier importing).
 In this example, `path/to/project/thesis_template` is the path you would use for the 
 `thesis_dir` argument in the `savefigs` function.
