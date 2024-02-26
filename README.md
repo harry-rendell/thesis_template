@@ -34,7 +34,7 @@ path/to/project
 │   └── some_analysis_code.py
 │
 └── thesis_template
-    ├── chap1
+    ├── chap1_intro
     │   ├── draft_graphics
     │   │   └── plot.png
     │   ├── graphics
@@ -52,7 +52,7 @@ path/to/project
     │   ├── chap4.tex
     │   ├── draft_graphics
     │   └── graphics
-    ├── chap5
+    ├── chap5_conclusion
     │   ├── conclusion.tex
     │   ├── draft_graphics
     │   └── graphics
