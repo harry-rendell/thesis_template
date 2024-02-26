@@ -76,7 +76,7 @@ In this example, `path/to/project/thesis_template` is the path you would use for
 `thesis_dir` argument in the `savefigs` function.
 
 Note that this template does not include `draft_graphics` folders by default,
-however, `safefigs` will generate these automatically as needed.
+however, `savefigs` will generate these automatically as needed.
 
 ### Updating the graphics path (even more optional)
 If you decide to organise your plots into subdirectories inside `draft_graphics/graphics`, you will need to add these directories to the graphics path.
