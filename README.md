@@ -3,7 +3,7 @@
 ## How to use this template
 1. Download this repository (do not clone or fork as it would prevent you from setting it up as your own git repo later)
 2. Create new project in Overleaf and upload the folder (may need to be zipped first)
-3. Add figures to the `graphics` folders and all references to `master.bib`
+3. Add figures to the `graphics` folders and all references to `main.bib`
 4. Optional: read the section below for some neat tips!
 
 ## Faster compiling and better plot management
@@ -57,8 +57,8 @@ path/to/project
     │   ├── draft_graphics
     │   └── graphics
     ├── customisations.sty
-    ├── master.bib
-    ├── master.tex
+    ├── main.bib
+    ├── main.tex
     ├── mnras.bst
     ├── scripts
     │   └── generate_graphics_paths.py
