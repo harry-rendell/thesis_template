@@ -14,10 +14,11 @@
 2. Make a git repository
 * Click on overleaf menu -> click on `Git` to copy the git clone command
     * leave the popout open so you can easily copy the token when prompted (the token can only be viewed once, so you will need to generate a one if you close it)
-* Navigate to where you generate plots (cuillin or your local machine)
-* paste the git clone command, adding the folder name to the end of the command
+* Navigate to cuillin or your local machine (whichever you use to generate plots)
+    * Navigate to your base directory (do not go inside your working directory)
+* Paste the git clone command, adding the folder name to the end of the command
     * i.e. `git clone https://git.overleaf.com/123abc123abc123abc thesis`
-    * this will create a git repository in a folder called `thesis` your working directory
+    * this will create a git repository in a folder called `thesis`
 * [more information on Overleaf Git integration](https://www.overleaf.com/learn/how-to/Git_integration)
 
 \
