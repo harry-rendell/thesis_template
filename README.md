@@ -10,7 +10,7 @@
 4. Add your references to the `main.bib` file
 
 ### Connect the overleaf project to git
-1. Get [https://www.overleaf.com/edu/edinburgh](Overleaf Premium) if you do not already have it (it's free as an Edinburgh student!)
+1. Get [Overleaf Premium](https://www.overleaf.com/edu/edinburgh) if you do not already have it (it's free as an Edinburgh student!)
 2. Make a git repository
 * Click on overleaf menu -> click on `Git` to copy the git clone command
     * leave the popout open so you can easily copy the token when prompted (the token can only be viewed once, so you will need to generate a one if you close it)
@@ -18,7 +18,7 @@
 * paste the git clone command, adding the folder name to the end of the command
     * i.e. `git clone https://git.overleaf.com/123abc123abc123abc thesis`
     * this will create a git repository in a folder called `thesis` your working directory
-* [https://www.overleaf.com/learn/how-to/Git_integration](more information on Overleaf Git integration)
+* [more information on Overleaf Git integration](https://www.overleaf.com/learn/how-to/Git_integration)
 
 \
 By making your Overleaf project a Git repository, you can have it as a folder alongside your code 
@@ -87,8 +87,8 @@ In this example, `some_analysis_code.py` is the code used to generate plots, and
 ### Nested directories and updating the graphics path (even more optional)
 If you decide to organise your plots into subdirectories inside `draft_graphics/graphics`, you will need to add these directories to the graphics path:
 * Run `scripts/generate_graphics_path.py` from the `thesis_template folder` to generate a new latex graphics path
-    i.e. `python scripts/generate_graphics_path.py`
+    * i.e. `python scripts/generate_graphics_path.py`
 * Copy & paste it over the previous one in `customisations.sty`
 
 ### Latex Customisations
-You can update customisations.sty to make shortcuts for long latex commands. The example [https://github.com/harry-rendell/thesis_template/blob/626066b9c4d6a1a6ea0f66d23c9cc83c158a5a39/customisations.sty#L10](here) allows you to make colorful notes to yourself as you work on the text.
+You can update customisations.sty to make shortcuts for long latex commands. The example [here](https://github.com/harry-rendell/thesis_template/blob/626066b9c4d6a1a6ea0f66d23c9cc83c158a5a39/customisations.sty#L10) allows you to make colorful notes to yourself as you work on the text.
