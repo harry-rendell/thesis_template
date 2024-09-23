@@ -93,3 +93,29 @@ If you decide to organise your plots into subdirectories inside `draft_graphics/
 
 ### Latex Customisations
 You can update customisations.sty to make shortcuts for long latex commands. The example [here](https://github.com/harry-rendell/thesis_template/blob/626066b9c4d6a1a6ea0f66d23c9cc83c158a5a39/customisations.sty#L10) allows you to make colorful notes to yourself as you work on the text.
+
+# Corrections
+When submitting corrections, the examiners will often asked for 'tracked changes', i.e., asking you to show where edits have been made in your thesis. A simple way of doing this would be to simply highlight each correction by hand, although this is cumbersome. Thankfully, there is already a solution to this problem (called `latexdiff`) and since your project is already a git repository, you can generate diffs seamlessly!
+
+## Generating a diff'd version of your thesis with `latexdiff`
+Steps:
+1. Install latexdiff (this depends on your operating system and you may need to do some googling to get it installed. Note that, for mac users, you only need basictex which is a lightweight version of mactex)
+2. Find the hash of the commit that you want to compare against
+3. I asked Chat-GPT to automate the process of generating these diff files (see `scripts/generate_diff.sh`)
+4. You will now need to compile using these diff files in your thesis, by uncommenting one block and including another, shown below:
+
+```
+% \include{chap1_intro/intro}
+% \include{chap2/chap2}
+% \include{chap3/chap3}
+% \include{chap4/chap4}
+% \include{chap5/chap5}
+% \include{conclusion/conclusion}
+
+\include{chap1_intro/intro_diff}
+\include{chap2/chap2_diff}
+\include{chap3/chap3_diff}
+\include{chap4/chap4_diff}
+\include{chap5/chap5_diff}
+\include{conclusion/conclusion_diff}
+```
