@@ -24,7 +24,7 @@
 \
 By making your Overleaf project a Git repository, you can have it as a folder alongside your code 
 which enables you to output plots DIRECTLY to the Overleaf git folder, which can be 
-commited and pushed directly to Overleaf, even if you are creating plots on a cluster such as cuillin!
+commited and pushed directly to Overleaf, even if you are creating plots on a cluster! (such as cuillin)
 No more dragging and dropping plots into Overleaf...
 
 
