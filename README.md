@@ -95,7 +95,7 @@ If you decide to organise your plots into subdirectories inside `draft_graphics/
 You can update customisations.sty to make shortcuts for long latex commands. The example [here](https://github.com/harry-rendell/thesis_template/blob/626066b9c4d6a1a6ea0f66d23c9cc83c158a5a39/customisations.sty#L10) allows you to make colorful notes to yourself as you work on the text.
 
 # Corrections
-When submitting corrections, the examiners will often asked for 'tracked changes', i.e., asking you to show where edits have been made in your thesis. A simple way of doing this would be to simply highlight each correction by hand, although this is cumbersome. Thankfully, there is already a solution to this problem (called `latexdiff`) and since your project is already a git repository, you can generate diffs seamlessly!
+When submitting corrections, examiners will often asked for 'tracked changes', i.e., asking you to show where edits have been made in your thesis. A simple way of doing this would be to simply highlight each correction by hand, although this is cumbersome. Thankfully, there is already a solution to this problem (called `latexdiff`) and since your project is already a git repository, you can generate diffs seamlessly!
 
 ## Generating a diff'd version of your thesis with `latexdiff`
 Steps:
