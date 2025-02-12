@@ -101,7 +101,7 @@ When submitting corrections, examiners will often asked for 'tracked changes', i
 Steps:
 1. Install latexdiff (this depends on your operating system and you may need to do some googling to get it installed. Note that, for mac users, you only need basictex which is a lightweight version of mactex)
 2. Find the hash of the commit that you want to compare against
-3. I asked Chat-GPT to automate the process of generating these diff files (see `scripts/generate_diff.sh`)
+3. I have a script to automate the process of generating these diff files (see `scripts/generate_diff.sh`)
 4. You will now need to compile using these diff files in your thesis, by uncommenting one block and including another, shown below:
 
 ```
