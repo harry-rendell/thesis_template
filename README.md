@@ -41,40 +41,40 @@ Here is an example of my folder structure:
 ```
 path/to/project
 │
-├── mycode
+├── mycode/
 │   ├── save_figure.py
 │   └── some_analysis_code.py
 │
-└── thesis
-    ├── chap1_intro
-    │   ├── draft_graphics
+└── thesis/
+    ├── chap1_intro/
+    │   ├── draft_graphics/
     │   │   └── plot.png
-    │   ├── graphics
+    │   ├── graphics/
     │   │   └── plot.pdf
     │   └── intro.tex
-    ├── chap2
+    ├── chap2/
     │   ├── chap2.tex
-    │   ├── draft_graphics
-    │   └── graphics
-    ├── chap3
+    │   ├── draft_graphics/
+    │   └── graphics/
+    ├── chap3/
     │   ├── chap3.tex
-    │   ├── draft_graphics
-    │   └── graphics
-    ├── chap4
+    │   ├── draft_graphics/
+    │   └── graphics/
+    ├── chap4/
     │   ├── chap4.tex
-    │   ├── draft_graphics
-    │   └── graphics
-    ├── chap5_conclusion
+    │   ├── draft_graphics/
+    │   └── graphics/
+    ├── chap5_conclusion/
     │   ├── conclusion.tex
-    │   ├── draft_graphics
-    │   └── graphics
+    │   ├── draft_graphics/
+    │   └── graphics/
     ├── customisations.sty
     ├── main.bib
     ├── main.tex
     ├── mnras.bst
-    ├── scripts
+    ├── scripts/
     │   └── generate_graphics_paths.py
-    └── thesis-frontmatter
+    └── thesis-frontmatter/
         ├── abstract.tex
         ├── acknowledgements.tex
         ├── crest.pdf
